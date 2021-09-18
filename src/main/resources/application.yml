@@ -3,15 +3,18 @@ server:
  port: 8081
 
 spring:
+ application:
+  name: config-server
  cloud:
   config:
    server:
     git:
      uri: https://github.com/leacar21/technical-config-data.git
-     searchPath: configFiles
+     searchPaths: files
+     clone-on-start: true
      username: ${GIT_USER}
      password: ${GIT_PASSWORD}
  security:
   user:
    name: root
-   password: s3cr3t   
+   password: s3cr3t
