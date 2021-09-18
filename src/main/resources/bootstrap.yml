@@ -7,8 +7,8 @@ spring:
   config:
    server:
     git:
-     uri: https://...
-     searchPath: config-data
+     uri: https://github.com/leacar21/technical-config-data.git
+     searchPath: configFiles
      username: ${GIT_USER}
      password: ${GIT_PASSWORD}
  security:
